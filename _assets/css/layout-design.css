@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+/* Sans marges */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Dégradé */
+
+.background {
+    background: linear-gradient(90deg, #eff2f6 66.66666667%, #ad0000 33.33333333%);
+}
+
+/* Tattoo */
+
+body:after {
+    content: "Tattoo";
+    font-size: 200px;
+    text-shadow: 1px 0px 30px rgba(0, 0, 0, 0.6);
+    color: #ad0000;
+
+    position: fixed;
+    top: 0px;
+    right: 0px;
+
+    transform: rotate(90deg);
+    transform-origin: bottom;
+
+    margin-top: 100px;
+    margin-right: -50px;
+
+    z-index: 10;
+}
+
+/* Pour que le tattoo passe derrière le contenu */
+
+#layout-header > *,
+#layout-recherche > *,
+#layout-content,
+#layout-footer > * {
+    position: relative;
+    z-index: 20;
+}
+
+#layout-content--avantages ul li {
+    max-width: 150px;
+    margin-top: 20px;
+
+}
+
+
+#layout-content--avantages ul {
+    margin: 75px 0 100px 0;
+}
+
+
+#layout-content,
+#layout-footer {
+    background-color: white;
+}
+
+/* Cercle blanc pour l'image */
+
+#layout-recherche .round {
+    border-radius: 100%;
+    background-color: white;
+    display: inline-block;
+    padding: 25px;
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.logo-inksmap {
+    height: 100%;
+}
+
+#layout-scroll-down p {
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Safari 3-8 */
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    margin : 0px;
+}
+
+
+
+#layout-content--briques--right {
+    background-image: url(../images/mock-up-design-avec-un-jeune-homme-avec-un-smartphone_23-2147653526.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    background-position: center;
+
+}
+
+#layout-content--briques--right div:first-child {
+    background-color: rgba(35, 35, 35, 0.6);
+
+}
+
+
+ #layout-content--briques--left{
+    background-color: #f8f9fb;
+}
+
+#layout-content--briques--left::after {
+    content: "";
+    width: 200px;
+    height: 600px;
+    
+    background:  url("../images/logo_inksmap.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+    
+    -webkit-transform: rotate(-40deg) scaleX(-1);
+    -moz-transform: rotate(-40deg) scaleX(-1);
+    -ms-transform: rotate(-40deg) scaleX(-1);
+    -o-transform: rotate(-40deg) scaleX(-1);
+    transform: rotate(-40deg) scaleX(-1);
+    
+    
+    
+    top: 130px;
+    left: 30px;
+    position: absolute;
+    display: inline-block;
+}
+
+#layout-content--choisir-1--left {
+    background-image: url(../images/184087348.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    background-position: center;
+
+}
+
+#layout-content--choisir-1--right {
+    background-color: #232323;
+    color: white;
+    
+}
+
+#layout-content--choisir-2 {
+    background-image: url(../images/session-tattoo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    background-position: center;
+    text-align: center;
+}
+
+#layout-recherche {
+    padding: 150px 0;
+
+}
+
+#layout-recherche > div {
+    margin: 0 20px;
+
+}
+
+#layout-content--briques > div p {
+    padding-top: 15%;
+    padding-left: 110px;
+}
+
+
+
+#layout-content--choisir-1--right a {
+    border: 1px grey solid;
+    border-radius: 20px;
+    padding: 0 15px;
+
+}
+
+#layout-content--tatoueurs ul li {
+    max-width: 215px;
+    margin: 0px 0 70px 0;
+
+}
+
+
+
+#layout-content--tatoueurs a {
+    border: 1px black solid;
+    border-radius: 20px;
+    padding: 0 15px;
+    margin-left: auto;
+}
+
+#layout-content--tatoueurs div:last-child {
+    
+    width: 150px;
+    display: flex;
+	flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+
+
+#layout-content--choisir-2 div a {
+    background-color: white;
+    border : solid white 1px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    
+}
+
+
+
+
+/* ****************************************** */
+/*          Image en forme de losange         */
+
+.losange, .losange div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+}
+.losange {
+  transform: rotate(45deg);
+}
+.losange .los1 {
+  width: 355px;
+  height: 355px;
+  transform: rotate(-45deg) translateY(-74px);
+}
+.losange .los1 img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
+.layout-content--tatoueurs--photo {
+  position: absolute;
+  width: 180%;
+  height: 180%;
+  top: -40%;
+  left: -40%;
+    
+     transform: rotate(-45deg);
+}

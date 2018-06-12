@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/* ********************************** */
+/* Header - Menu                      */
+.debug #layout-header{
+	border: 2px solid black;
+}
+
+.debug #layout-header>div:first-child{ /* Logo container */
+	border: 1px dashed blue;
+}
+
+.debug #layout-header nav>*{ /* Logo container */
+	border: 1px dashed blue;
+	border: 1px dashed blue;
+}
+
+/* ********************************** */
+/* Recherche      */
+.debug #layout-recherche{
+	border: 2px solid black;
+}
+
+.debug #layout-recherche>*{
+	border: 1px dashed blue;
+}
+
+/* ********************************** */
+/* Scroll      */
+.debug #layout-scroll-down{
+	border: 2px solid black;
+}
+
+/* ********************************** */
+/* Main                               */
+.debug #layout-content>section{
+	border: 2px solid black;
+}
+
+.debug #layout-content--briques > div{
+	border: 1px dashed blue;
+}
+.debug #layout-content--briques > div > div{
+	border: 1px dashed green;
+}
+
+.debug #layout-content--avantages ul>li{
+	border: 1px dashed blue;
+}
+
+.debug #layout-content--choisir-1>*{
+	border: 1px dashed blue;
+}
+
+.debug #layout-content--tatoueurs ul>li{
+	border: 1px dashed blue;
+}

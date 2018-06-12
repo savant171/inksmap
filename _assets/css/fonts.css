@@ -1,0 +1,189 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/montserrat/Montserrat-Black.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Montserrat-bold";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/montserrat/Montserrat-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Montserrat-semibold";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/montserrat/Montserrat-SemiBold.otf") format("opentype");
+}
+
+/*
+   
+    font-family: "Montserrat", "Helvetica", "Arial", "sans-serif";
+    font-family: "Montserrat-bold", "Helvetica", "Arial", "sans-serif";
+    font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+*/
+
+* {
+    font-family: "Montserrat", "Helvetica", "Arial", "sans-serif";
+    font-weight: 900;
+    font-style: normal;
+}
+
+#title-site {
+    font-family: "Montserrat-bold", "Helvetica", "Arial", "sans-serif";
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+header#layout-header nav {
+
+    font-family: "Montserrat-bold", "Helvetica", "Arial", "sans-serif";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#layout-recherche p {
+    font-family: "Montserrat-bold", "Helvetica", "Arial", "sans-serif";
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 35px;
+}
+
+
+#layout-recherche input,
+#layout-recherche button {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* ****************************************************** */
+
+/* Changement de la couleur du placeholder                */
+
+#layout-recherche input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1;
+    /* Firefox */
+}
+
+#layout-recherche input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: black;
+}
+
+#layout-recherche input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: black;
+}
+
+/* ******************************************************* */
+
+#layout-scroll-down p {
+    font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+}
+
+
+
+#layout-content--briques p {
+    font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+    color: black;
+    font-size: 50px;
+}
+
+#layout-content--briques--right p {
+    color: white;
+}
+
+
+
+#layout-content--avantages h2,
+#layout-content--avantages ul li {
+    font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+    color: black;
+    text-align: center;
+}
+
+#layout-content--avantages ul i {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+#layout-content--avantages h2 {
+    font-size: 40px;
+}
+
+
+
+
+
+#layout-content--choisir-1--right p,
+#layout-content--choisir-1--right span {
+    font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+    font-size: 55px;
+}
+
+#layout-content--choisir-1--right p {
+    color: white;
+
+}
+
+#layout-content--choisir-1--right span.red {
+    color: #ad0000;
+
+}
+
+#layout-content--choisir-1--right a {
+    font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+    font-size: 20px;
+
+}
+
+#layout-content--tatoueurs h2,
+#layout-content--tatoueurs span,
+#layout-content--tatoueurs > ul > li > p {
+    font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+    color: black;
+    text-align: center;
+}
+
+
+#layout-content--tatoueurs h2 {
+    font-size: 60px;
+}
+
+#layout-content--tatoueurs span.red {
+    color: #ad0000;
+
+}
+
+
+#layout-content--tatoueurs a {
+    font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+    font-size: 20px;
+
+}
+
+#layout-content--choisir-2 div h2,
+#layout-content--choisir-2 div a {
+    font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+    color: black;
+}
+
+#layout-content--choisir-2 div h2 {
+    font-size: 60px;
+    color: white;
+}
+
+
+#layout-content--choisir-2 div a {
+    font-size: 20px;
+    color: #318f76;
+}

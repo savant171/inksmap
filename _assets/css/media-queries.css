@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+
+/* ************************************************ */
+
+/* Large devices (large desktops, 1200px and up)    */
+
+body.debug {
+    background-color: red;
+}
+
+/* Pour les marges */
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+/* ************************************************ */
+
+/* Medium devices (desktops, less than 1200px)          */
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    body.debug {
+        background-color: yellow;
+    }
+
+    /* Pour les marges */
+    .container {
+        max-width: 970px;
+        margin: auto;
+    }
+
+    #layout-content--choisir-1--right > p,
+    #layout-content--choisir-1--right span {
+        font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+        font-size: 53px;
+    }
+    
+     #layout-content--briques p {
+        font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+        color: black;
+        font-size: 43px;
+    }
+    
+    #layout-content--briques #layout-content--briques--right p {
+        font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+        color: white;
+        font-size: 43px;
+    }
+}
+
+/* ************************************************ */
+
+/* Small devices (tablets, less than 992px)            */
+
+@media (min-width: 769px) and (max-width: 992px) {
+    body.debug {
+        background-color: green;
+    }
+
+    /* Pour les marges */
+    .container {
+        max-width: 750px;
+        margin: auto;
+    }
+
+    #layout-content--choisir-1--right p,
+    #layout-content--choisir-1--right span {
+        font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+        font-size: 45px;
+    }
+
+    #layout-content--briques p {
+        font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+        color: black;
+        font-size: 35px;
+    }
+
+    
+     #layout-content--briques #layout-content--briques--right p {
+        font-family: "Montserrat-semibold", "Helvetica", "Arial", "sans-serif";
+        color: white;
+        font-size: 40px;
+    }
+    
+}
+
+/* ************************************************ */
+
+/* Extra small devices (phones, less than 768px)    */
+
+@media (max-width: 768px) {
+    body.debug {
+        background-color: black;
+    }
+
+    /* Pour les marges */
+    .container {
+        padding: 0px 15px;
+    }
+
+    body:after {
+        content: "";
+
+    }
+
+    .background {
+        background: -webkit-linear-gradient(left, #eff2f6 50%, #ad0000 50%);
+        background: -o-linear-gradient(left, #eff2f6 50%, #ad0000 50%);
+        background: linear-gradient(to right, #eff2f6 50%, #ad0000 50%);
+    }
+
+    #layout-recherche p {
+        margin-left: 10%;
+    }
+
+    #layout-recherche input[type="text"] {
+        max-width: 300px;
+    }
+
+    #layout-recherche{
+        text-align: center;
+    }
+    
+    #layout-recherche .round {
+        border-radius: 100%;
+        background-color: white;
+        display: inline-block;
+        padding: 25px;
+        height: 250px;
+        width: 250px;
+        text-align: center;
+    }
+
+    #layout-scroll-down {
+        display: none;
+    }
+
+    #layout-content--briques #layout-content--briques--left {
+        display: none;
+    }
+    #layout-content--briques #layout-content--briques--right p {
+        padding-left: 10px;
+    }
+    #layout-content--briques #layout-content--briques--right > div {
+        max-width: 100%;
+    }
+    #layout-content--briques #layout-content--briques--right > :last-child {
+        display: none;
+    }
+
+    #layout-content--briques--left::after {
+        background: none;
+    }
+
+    #layout-content--choisir-1--left {
+        display: none;
+
+    }
+
+
+    #layout-content--choisir-1 > * {
+        width: 100%;
+
+    }
+
+    #layout-content--choisir-1--right {
+
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    #layout-content--tatoueurs h2 {
+        font-size: 50px;
+    }
+    /* Pour faire passer le menu en dessous du logo (pas nécessaire avec le flex) 
+	#layout-header>:first-child{
+		flex-basis: 100%; 
+	}*/
+    /* Pour faire passer l'image en dessous de la recherche (pas nécessaire avec le flex) 
+	#layout-recherche>:last-child{
+		flex-basis: 100%; 
+		text-align: center;
+	}*/
+    /* Pour faire passer les deux briques de droite sous celle de gauche */
+    #layout-content--briques > :first-child {
+        flex-basis: 100%;
+        max-width: inherit;
+    }
+
+}
