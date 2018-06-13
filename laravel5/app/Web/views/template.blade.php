@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./_assets/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="_assets/fonts/fontawesome/fontawesome-all.css">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/base/minified/jquery-ui.min.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <title>@yield('titre')</title>
 </head>
 
@@ -27,8 +30,8 @@
         <section id="layout-recherche">
             <div>
                 <p>Recherche ton tatoueur</p>
-                <input type="text" name="search" placeholder="Rechercher par nom, lieu ou style" />
-                <button> <i class="fas fa-search"></i></button>
+
+                @yield('recherche')
             </div>
             <div>
                 <div class="round"><img class="logo-inksmap" src="_assets/images/logo_inksmap.png" /></div>
@@ -53,6 +56,19 @@
         <div>Votre salon ici?<br/><a>Inscrivez vous</a></div>
     </footer>
 -->
+
+  <script>
+  $(function()
+  {
+  	 $( "#q" ).autocomplete({
+  	  source: "{{ url('search/autocomplete') }}",
+  	  minLength: 3,
+  	  select: function(event, ui) {
+  	  	$('#q').val(ui.item.value);
+  	  }
+  	});
+  });
+  </script>
 </body>
 
 </html>

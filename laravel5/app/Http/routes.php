@@ -19,3 +19,4 @@ Route::post('tatoueur/postTatoueur', 'TatoueurController@postTatoueurAdd');
 */
 
 Route::get('/', 'HomeController@indexSite');
+Route::get('search/autocomplete', 'RechercheController@autocomplete');

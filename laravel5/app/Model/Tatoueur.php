@@ -25,8 +25,22 @@ class Tatoueur extends Model
   private $_image;
   private $_ville;
 
+
+
+  // private $_styles;
+  //
+  // public function __construct(){
+  //   $_styles = $this->belongsToMany('App\Model\Style', 'personnes-styles',
+  //     'id-personnes', 'id-styles');
+  // }
+
 	public function nomComplet(){
 		return $this->prenom." ".$this->nom;
 	}
 
+  public function styles()
+  {
+      return $this->belongsToMany('App\Model\Style', 'personnes-styles',
+        'id-personnes', 'id-styles');
+  }
 }

@@ -8,6 +8,17 @@
 @endsection
 
 
+@section('recherche')
+
+
+
+<form method="GET" action="{{ url('search/autocomplete') }}">
+  <input id="q" placeholder="Rechercher par nom, lieu ou style" name="q" type="text" value="">
+  <button type="submit"> <i class="fas fa-search"></i></button>
+</form>
+
+@endsection
+
 @section('contenu')
 
 <main id="layout-content">
@@ -58,7 +69,11 @@
                   </div>
                   <p class="layout-content--tatoueurs--nom">{{$tatoueur->nom}} {{$tatoueur->prenom}}</p>
                   <p class="layout-content--tatoueurs--ville">{{$tatoueur->ville}}</p>
-                  <p class="layout-content--tatoueurs--description">Spécialiser dans le Trash Polka, les portraits et le dot point</p>
+                  <p class="layout-content--tatoueurs--styles">
+                  @foreach($tatoueur->styles as $style)
+                      {{$style->style}};
+                  @endforeach
+                  </p>
               </li>
       		@endforeach
         </ul>
